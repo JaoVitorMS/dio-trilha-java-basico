@@ -1,18 +1,11 @@
-## Getting Started
+# 🖥️ Desafio de controle de fluxo 
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Desafio do modulo **Criando Um Pequeno Sistema Para Validação de Processo Seletivo** .
 
-## Folder Structure
+## 🚀 Objetivo
 
-The workspace contains two folders by default, where:
+O objetivo do desafio era realizar ler dois parametros, sendo que obrigatoriamente o segundo parametro, teria que ser menor que o primeiro, caso contrario deveria ser mostrado uma exception personalizada.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## ⚒️ Melhorias Adicionadas
+Decidi por uma melhoria no codigo, para que caso caia na exception, o programa não para de rodar, assim o usuario pode so arrumar o seu input.
+- Explicação da melhoria: Adicição do while e da variavel boolean, para cancelar o rompimento do codigo.
