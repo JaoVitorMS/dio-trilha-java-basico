@@ -16,9 +16,19 @@ public class AgendaEventos {
     }
     public void exibirAgenda(){
         Map<LocalDate, Evento> eventosTreeMap = new TreeMap<>(eventosMap);
+        for (Map.Entry<LocalDate, Evento> entry : eventosTreeMap.entrySet()) {
+            System.out.println("Data: " + entry.getKey() + " - " + entry.getValue());
+        }
+
     }
 
     public static void main ( String[] args ) {
         AgendaEventos agenda = new AgendaEventos();
+        agenda.adicionarEvento(LocalDate.of(2021, 10, 10), "Evento 1", "Atração 1");
+        agenda.adicionarEvento(LocalDate.of(2021, 10, 11), "Evento 2", "Atração 2");
+        agenda.adicionarEvento(LocalDate.of(2021, 10, 12), "Evento 3", "Atração 3");
+
+        agenda.exibirAgenda();
+
     }
 }
